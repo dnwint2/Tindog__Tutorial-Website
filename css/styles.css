@@ -1,0 +1,91 @@
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.title-section__container-fluid {
+  padding: 3% 15%;
+}
+
+.title-section__download-button-icon { /* title container download button apple / google play download button icon */
+  padding-right: 0.5rem;
+}
+
+.navbar { /* bootstrap class for navbar */
+  padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light", sans-serif;
+}
+
+.title-section__call-to-action {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.title-section__phone-image {
+  background-color: transparent;
+  transform: rotate(25deg);
+  width: 60%;
+  margin-bottom: 10%;
+}
+
+.title-section__download-button {
+  margin: 5% 3% 5% 0;
+}
+
+#title {
+  background-color: #FF4C68;
+  color: white
+}
+
+/* features section */
+
+
+.features-section__container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.features-section__feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.features-section__feature-icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.features-section__feature-icon:hover {
+  color: #ff4c68;
+}
+
+.features-section__feature-title {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.features-section__feature-text {
+  color: #818181;
+}
+
+#features {
+  padding: 7% 15%;
+}
