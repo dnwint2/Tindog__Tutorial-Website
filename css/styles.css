@@ -13,8 +13,13 @@ h2 {
 
 /* title section */
 
+#title {
+  background-color: #FF4C68;
+  color: white;
+}
+
 .title-section__container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 .title-section__download-button-icon { /* title container download button apple / google play download button icon */
@@ -48,22 +53,23 @@ h2 {
 }
 
 .title-section__phone-image {
-  background-color: transparent;
   transform: rotate(25deg);
-  width: 60%;
-  margin-bottom: 10%;
+  width: 20%;
+  position: absolute;
+  right: 30%
 }
 
 .title-section__download-button {
   margin: 5% 3% 5% 0;
 }
 
-#title {
-  background-color: #FF4C68;
-  color: white
-}
-
 /* features section */
+
+#features {
+  background-color: white;
+  padding: 7% 15%;
+  position: relative;
+}
 
 .features-section__container-fluid {
   padding: 0;
@@ -95,10 +101,6 @@ h2 {
   color: #818181;
 }
 
-#features {
-  padding: 7% 15%;
-}
-
 /* testimonials section */
 
 .testimonials-section__testifier-portrait-image {
@@ -128,4 +130,43 @@ h2 {
   background-color: #ef8172;
   text-align: center;
   padding-bottom: 3%;
+}
+
+/* pricing section */
+
+#pricing {
+  text-align: center;
+  padding: 120px 100px;
+}
+
+.pricing-section__cards-container-fluid {
+  padding: 60px 0;
+}
+
+.pricing-section__pricing-plan-card {
+  margin: 0;
+}
+
+.pricing-section__pricing-plan-card-body {
+
+}
+
+.pricing-section__pricing-plan-card-button {
+  width: 100%;
+}
+
+.pricing-section__pricing-plan-card-per-month-de-emphasis {
+  color: #818181;
+}
+
+.pricing-section__pricing-plan-card-text {
+  color: #818181;
+}
+
+.pricing-section_pricing-plan-name {
+  font-weight: 700;
+}
+
+.pricing-section__pricing-plan-column {
+  padding: 3% 2%;
 }
