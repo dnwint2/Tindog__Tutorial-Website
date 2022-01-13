@@ -45,6 +45,7 @@ h2 {
   font-family: "Montserrat-light", sans-serif;
 }
 
+
 .title-section__call-to-action {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -52,11 +53,23 @@ h2 {
   line-height: 1.5;
 }
 
+.title-section__column {
+  position: relative;
+}
+
 .title-section__phone-image {
+  width: 60%;
   transform: rotate(25deg);
-  width: 20%;
   position: absolute;
-  right: 30%
+  right: 30%;
+}
+
+@media (max-width: 1027px) {
+  .title-section__phone-image {
+    text-align: center;
+    position: static;
+    transform: rotate(0deg);
+  }
 }
 
 .title-section__download-button {
