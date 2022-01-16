@@ -8,7 +8,7 @@
   <!-- Google Fonts - Montserrat and Ubuntu -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Ubuntu&display=swap">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/396bdb21d2.js" crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@
 
   <section id="title">
 
-    <div class="container-fluid title-section__container-fluid">
+    <div class="container-fluid">
 
       <!-- Nav Bar -->
 
@@ -55,9 +55,9 @@
 
       <div class="row">
         <div class="col-lg-6 title-section__column">
-          <h1 class="title-section__call-to-action">Meet new and interesting dogs nearby.</h1>
-          <button class="btn btn-dark btn-lg title-section__download-button" type="button"><span class="fab fa-apple title-section__download-button-icon"></span>Download</button>
-          <button class="btn btn-outline-light btn-lg title-section__download-button" type="button"><span class="fab fa-google-play title-section__download-button-icon"></span>Download</button>
+          <h1 class="call-to-action-text">Meet new and interesting dogs nearby.</h1>
+          <button class="btn btn-dark btn-lg download-button" type="button"><span class="fab fa-apple download-button-icon"></span>Download</button>
+          <button class="btn btn-outline-light btn-lg download-button" type="button"><span class="fab fa-google-play download-button-icon"></span>Download</button>
         </div>
         <div class="col-lg-6 title-section__column">
           <img class="title-section__phone-image"src="images/iphone6.png" alt="iphone-mockup">
@@ -71,7 +71,7 @@
   <!-- Features -->
 
   <section id="features">
-    <div class="container-fluid features-section__container-fluid">
+    <div class="container-fluid">
       <div class="row">
 
         <div class="col-lg-4 text-center features-section__feature-box">
@@ -103,14 +103,14 @@
 
     <div id="testimonials-section__carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-          <img class="testimonials-section__testifier-portrait-image" src="images/dog-img.jpg" alt="dog-profile">
+        <div class="carousel-item common-padding active">
+          <h2 class="testimonials-section__testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonials-section__testifier-portrait-image" src="images/dog-img.jpg" alt="dog-profile-image">
           <em>Pebbles, New York</em>
         </div>
-        <div class="carousel-item">
-          <h2>My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-          <img class="testimonials-section__testifier-portrait-image" src="images/lady-img.jpg" alt="lady-profile">
+        <div class="carousel-item common-padding">
+          <h2 class="testimonials-section__testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonials-section__testifier-portrait-image" src="images/lady-img.jpg" alt="lady-profile-image">
           <em>Beverly, Illinois</em>
         </div>
       </div>
@@ -128,107 +128,88 @@
   <!-- Press -->
 
   <section id="press">
-    <img class="press-section__publication-logo" src="images/techcrunch.png" alt="tc-logo">
-    <img class="press-section__publication-logo" src="images/tnw.png" alt="tnw-logo">
-    <img class="press-section__publication-logo" src="images/bizinsider.png" alt="biz-insider-logo">
-    <img class="press-section__publication-logo" src="images/mashable.png" alt="mashable-logo">
-
+    <div class="container-fluid">
+      <img class="press-section__publication-logo" src="images/techcrunch.png" alt="tc-logo">
+      <img class="press-section__publication-logo" src="images/tnw.png" alt="tnw-logo">
+      <img class="press-section__publication-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+      <img class="press-section__publication-logo" src="images/mashable.png" alt="mashable-logo">
+    </div>
   </section>
 
 
   <!-- Pricing -->
 
   <section id="pricing">
+    <div class="container-fluid">
+      <h2 class="pricing-section__heading-text">A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for you and your dog.</p>
 
-    <h2>A Plan for Every Dog's Needs</h2>
-    <p>Simple and affordable price plans for you and your dog.</p>
-
-    <div class="container-fluid pricing-section__cards-container-fluid">
+      <div class="container-fluid pricing-section__cards-container-fluid">
         <div class="row d-flex align-items-start">
-            <div class="col-md-6 col-lg-4 pricing-section__pricing-plan-column">
+          <div class="col-md-6 col-lg-4 pricing-section__pricing-plan-column">
+            <div class="card pricing-section__pricing-plan-card">
+              <div class="card-header pt-3">
+                <h3 class="pricing-section_pricing-plan-name">Chihuahua</h3>
+              </div>
+              <div class="card-body pricing-section__pricing-plan-card-body">
+                <h2 class="card-title pricing-section__price">
+                  Free
+                </h2>
+                <p>5 matches Per Day</p>
+                <p>10 messages Per Day</p>
+                <p>Unlimited App Usage</p>
+                <button class="btn btn-lg btn-outline-dark pricing-section__pricing-plan-card-button" type="button" href="#">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pricing-section__pricing-plan-column">
+            <div class="card pricing-section__pricing-plan-card">
+              <div class="card-header pt-3">
+                <h3 class="pricing-section_pricing-plan-name">Labrador</h3>
+              </div>
+              <div class="card-body pricing-section__pricing-plan-card-body">
+                <h2 class="card-title pricing-section__price">
+                  $49
+                  <span class="pricing-section__pricing-plan-card-per-month-de-emphasis">
+                    / mo
+                  </span>
+                </h2>
+                <p>Unlimited Matches</p>
+                <p>Unlimited Messages</p>
+                <p>Unlimited App Usage</p>
+                <button class="btn btn-lg btn-dark pricing-section__pricing-plan-card-button" type="button" href="#">
+                      Sign Up
+                        </button>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 pricing-section__pricing-plan-column">
                 <div class="card pricing-section__pricing-plan-card">
-                     <div class="card-header pt-3">
-                         <h3 class="pricing-section_pricing-plan-name">Chihuahua</h3>
-                     </div>
-                     <div class="card-body pricing-section__pricing-plan-card-body">
-                         <h2 class="card-title">
-                            Free
-                        </h2>
-                        <p class="card-text pricing-section__pricing-plan-card-text">
-                            5 matches Per Day
-                        </p>
-                        <p class="card-text pricing-section__pricing-plan-card-text">
-                            10 messages Per Day
-                        </p>
-                        <p class="card-text pricing-section__pricing-plan-card-text">
-                            Unlimited App Usage
-                        </p>
-                        <button class="btn btn-lg btn-outline-dark pricing-section__pricing-plan-card-button" type="button" href="#">
-                            Sign Up
-                        </button>
-                    </div>
+                  <div class="card-header pt-3">
+                    <h3 class="pricing-section_pricing-plan-name">Mastiff</h3>
+                  </div>
+                  <div class="card-body pricing-section__pricing-plan-card-body">
+                    <h2 class="card-title pricing-section__price">
+                      $99
+                      <span class="pricing-section__pricing-plan-card-per-month-de-emphasis">
+                        / mo
+                      </span>
+                    </h2>
+                    <p>Priority Listing</p>
+                    <p>Unlimited Matches</p>
+                    <p>Unlimited Messages</p>
+                    <p>Unlimited App Usage</p>
+                    <button class="btn btn-lg btn-dark pricing-section__pricing-plan-card-button" type="button" href="#">
+                      Sign Up
+                    </button>
+                  </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 pricing-section__pricing-plan-column">
-                            <div class="card pricing-section__pricing-plan-card">
-                    <div class="card-header pt-3">
-                        <h3 class="pricing-section_pricing-plan-name">Labrador</h3>
-                    </div>
-                    <div class="card-body pricing-section__pricing-plan-card-body">
-                        <h2 class="card-title">
-                            $49
-                            <span class="pricing-section__pricing-plan-card-per-month-de-emphasis">
-                                / mo
-                            </span>
-                        </h2>
-                        <p class="card-text pricing-section__pricing-plan-card-text">
-                            Unlimited Matches
-                        </p>
-                        <p class="card-text pricing-section__pricing-plan-card-text">
-                            Unlimited Messages
-                        </p>
-                        <p class="card-text pricing-section__pricing-plan-card-text">
-                            Unlimited App Usage
-                        </p>
-                        <button class="btn btn-lg btn-dark pricing-section__pricing-plan-card-button" type="button" href="#">
-                            Sign Up
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 pricing-section__pricing-plan-column">
-                <div class="card pricing-section__pricing-plan-card">
-                    <div class="card-header pt-3">
-                        <h3 class="pricing-section_pricing-plan-name">Mastiff</h3>
-                    </div>
-                    <div class="card-body pricing-section__pricing-plan-card-body">
-                        <h2 class="card-title">
-                            $99
-                            <span class="pricing-section__pricing-plan-card-per-month-de-emphasis">
-                                / mo
-                            </span>
-                        </h2>
-                        <p class="card-text pricing-section__pricing-plan-card-text">
-                            Priority Listing
-                        </p>
-                        <p class="card-text pricing-section__pricing-plan-card-text">
-                            Unlimited Matches
-                        </p>
-                        <p class="card-text pricing-section__pricing-plan-card-text">
-                            Unlimited Messages
-                        </p>
-                        <p class="card-text pricing-section__pricing-plan-card-text">
-                            Unlimited App Usage
-                        </p>
-                        <button class="btn btn-lg btn-dark pricing-section__pricing-plan-card-button" type="button" href="#">
-                            Sign Up
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+              </div>
+          </div>
+      </div>
     </div>
-
   </section>
 
 
@@ -236,9 +217,11 @@
 
   <section id="cta">
 
-    <h3 class ="call-to-action-section__call-to-action">Find the True Love of Your Dog's Life Today.</h3>
-    <button class="btn btn-primary btn-dark btn-lg mx-2 my-5" type="button"><span class="fab fa-apple title-section__download-button-icon"></span>Download</button>
-    <button class="btn btn-primary btn-light btn-lg mx-2 my-5" type="button"><span class="fab fa-google-play title-section__download-button-icon"></span>Download</button>
+    <div class="container-fluid">
+    <h3 class ="call-to-action-text">Find the True Love of Your Dog's Life Today.</h3>
+    <button class="btn btn-primary btn-dark btn-lg download-button" type="button"><span class="fab fa-apple download-button-icon"></span>Download</button>
+    <button class="btn btn-primary btn-light btn-lg download-button" type="button"><span class="fab fa-google-play download-button-icon"></span>Download</button>
+    </div>
 
   </section>
 
@@ -246,23 +229,23 @@
   <!-- Footer -->
 
   <footer id="footer">
-
-    <ul class="footer-section__social-nav">
-      <li class="footer-section_social-nav-item">
-        <link class="fab fa-twitter footer-section__social-nav-icon" href="#title">
-      </li>
-      <li class="footer-section_social-nav-item">
-        <link class="fab fa-facebook footer-section__social-nav-icon" href="#title">
-      </li>
-      <li class="footer-section_social-nav-item">
-        <link class="fab fa-instagram footer-section__social-nav-icon" href="#title">
-      </li>
-      <li class="footer-section_social-nav-item">
-        <link class="fas fa-envelope footer-section__social-nav-icon" href="#title">
-      </li>
-    </ul>
-
-    <p class="footer-section__copyright-claim-text">© Copyright 2022 TinDog</p>
+    <div class="container-fluid">
+      <ul class="footer-section__social-nav">
+        <li class="footer-section__social-nav-item">
+          <link class="fab fa-twitter footer-section__social-nav-icon" href="#title">
+        </li>
+        <li class="footer-section__social-nav-item">
+          <link class="fab fa-facebook footer-section__social-nav-icon" href="#title">
+        </li>
+        <li class="footer-section__social-nav-item">
+          <link class="fab fa-instagram footer-section__social-nav-icon" href="#title">
+        </li>
+        <li class="footer-section__social-nav-item">
+          <link class="fas fa-envelope footer-section__social-nav-icon" href="#title">
+        </li>
+      </ul>
+      <p>© Copyright 2022 TinDog</p>
+    </div>
 
   </footer>
 

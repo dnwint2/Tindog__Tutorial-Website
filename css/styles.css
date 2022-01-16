@@ -1,14 +1,48 @@
+/*
+  Notes for refactor:
+  1. Call to action text is identical in Title and CTA sections. Use global class?
+  2. Padding is identical in almost all sections. Use global class?
+
+
+*/
+
+/*
+  1. Code is default desktop-browser-first.
+  2. Some adaptability for tablet / mobile:
+      from Bootstrap classes throughout &
+      (at the bottom of this file) media queries.
+*/
+
 /* global */
 
+/* element css */
 body {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
+p {
+  color: #8f8f8f;
+}
+
+/* global classes */
+
+.call-to-action-text {  /* call to action text */
+  font-weight: 900;
+  font-size: 3.5rem;
   line-height: 1.5;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.download-button-icon {   /* download button apple / google play download button icon */
+  padding-right: 0.5rem;
+}
+
+.container-fluid {
+  padding: 7% 15%
 }
 
 /* title section */
@@ -16,129 +50,103 @@ h2 {
 #title {
   background-color: #FF4C68;
   color: white;
-}
-
-.title-section__container-fluid {
-  padding: 3% 15% 7%;
-}
-
-.title-section__download-button-icon { /* title container download button apple / google play download button icon */
-  padding-right: 0.5rem;
+  text-align: left;
 }
 
 .navbar { /* bootstrap class for navbar */
   padding: 0 0 4.5rem 0;
 }
 
-.navbar-brand {
+.navbar-brand { /* bootstrap class for navbar 'branding' - i.e. company name on navbar */
   font-family: "Ubuntu", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.nav-item {
+.nav-item {   /* bootstrap class */
   padding: 0 18px;
 }
 
-.nav-link {
+.nav-link {   /* bootstrap class */
   font-size: 1.2rem;
-  font-family: "Montserrat-light", sans-serif;
 }
 
-.title-section__call-to-action {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
+.title-section__container-fluid {   /* fluid bootstrap container for bootstrap grid of title section */
+  padding: 3% 15% 7%;
 }
 
-.title-section__column {
+.title-section__column {  /* to cause the title section phone image to size correctly */
   position: relative;
 }
 
-/* title section phone image viewed on desktop */
-.title-section__phone-image {
+.title-section__download-button-icon { /* title container download button apple / google play download button icon */
+  padding-right: 0.5rem;
+}
+
+.title-section__phone-image {   /* title section phone image (viewed on desktop) */
   width: 60%;
   transform: rotate(25deg);
   position: absolute;
   right: 30%;
 }
 
-.title-section__download-button {
-  margin: 5% 3% 5% 0;
-}
-
- /* title section phone image viewed on tablet or mobile */
-@media (max-width: 1028px) {
-  #title {
-    text-align: center;
-  }
-
-  .title-section__column {
-    position: static;
-  }
-
-  .title-section__phone-image {
-    text-align: center;
-    position: static;
-    transform: rotate(0deg);
-  }
-}
-
 /* features section */
 
-#features {
+#features {   /* apply to entire features section */
   background-color: white;
-  padding: 7% 15%;
   position: relative;
 }
 
-.features-section__container-fluid {
+.features-section__container-fluid {  /* fluid bootstrap container for all contents of features section */
   padding: 0;
   margin: 0;
 }
 
-.features-section__feature-box {
-  text-align: center;
+.features-section__feature-box {  /* div contaner for a single feature - icon, title, and text */
   padding: 5%;
 }
 
-.features-section__feature-icon {
+.features-section__feature-icon { /* style feature icons */
   color: #ef8172;
   margin-bottom: 1rem;
 }
 
-.features-section__feature-icon:hover {
+.features-section__feature-icon:hover { /* style feature icons hover state */
   color: #ff4c68;
 }
 
-.features-section__feature-title {
+.features-section__feature-title {  /* style feature title */
   font-family: "Montserrat-Bold", sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #000000;
 }
 
-.features-section__feature-text {
+.features-section__feature-text { /* style feature text */
   color: #818181;
 }
 
 /* testimonials section */
 
-.testimonials-section__testifier-portrait-image {
+#testimonials {
+  background-color: #ef8172;
+  color: #ffffff;
+}
+
+.testimonials-section__testimonial-text {  /* testimonials text */
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonials-section__testifier-portrait-image { /* testimonial 'profile-pic' */
   border-radius: 100%;
   margin: 20px;
   width: 10%;
 }
 
-#testimonials {
-  background-color: #ef8172;
-  color: #ffffff;
-  text-align: center;
-}
-
-.carousel-item {
-  padding: 7% 15%;
+.carousel-item {   /* bootstrap class */
+  padding: 7% 15%;   /* padding is here instead of in a fluid container around the entire carousel to make carousel control buttons accessible outside the carousel content */
 }
 
 /* press section */
@@ -150,86 +158,93 @@ h2 {
 
 #press {
   background-color: #ef8172;
-  text-align: center;
-  padding-bottom: 3%;
 }
 
 /* pricing section */
 
-#pricing {
-  text-align: center;
-  padding: 120px 100px;
+#pricing { /* pricing section container styling */
+
 }
 
-.pricing-section__cards-container-fluid {
+.pricing-section__heading-text { /* name of the pricing option, i.e. "Chihuahua" */
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-section__cards-container-fluid { /* container holding the cards */
   padding: 60px 0;
 }
 
-.pricing-section__pricing-plan-card {
+.pricing-section__pricing-plan-card { /* pricing option card styling */
   margin: 0;
 }
 
-.pricing-section__pricing-plan-card-body {
-
+.pricing-section__price {  /* secondary heading of price card, consisting of the price of the option featured on the card */
+  font-size: 2rem;
+  font-weight; 700;
+  margin-bottom: 0.75rem;
 }
 
-.pricing-section__pricing-plan-card-button {
+.pricing-section__pricing-plan-card-button { /* button to select pricing plan */
   width: 100%;
 }
 
-.pricing-section__pricing-plan-card-per-month-de-emphasis {
-  color: #818181;
-}
-
-.pricing-section__pricing-plan-card-text {
-  color: #818181;
-}
-
-.pricing-section_pricing-plan-name {
+.pricing-section_pricing-plan-name { /* name of the pricing plan, in pricing card header */
   font-weight: 700;
 }
 
-.pricing-section__pricing-plan-column {
+.pricing-section__pricing-plan-card-per-month-de-emphasis { /* works on span to de-emphasize '/mo' (monthly) in pricing */
+  color: #818181;
+}
+
+.pricing-section__pricing-plan-column {  /* customizer class for bootstrap columns, which each contain one pricing card */
   padding: 3% 2%;
 }
 
 /* call to action section */
 
-#cta {
+#cta {   /* call to action section styling */
   background-color: #ff4c68;
   color: #ffffff;
-  padding: 5% 15%;
-  text-align: center;
 }
 
-.call-to-action-section__call-to-action {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 3rem;
-  line-height: 1.5;
-}
 /* footer section */
 
-#footer {
-  padding: 5% 15%;
-  text-align: center;
+#footer {  /* footer section styling */
+
 }
 
-.footer-section__social-nav {
+.footer-section__social-nav { /* social nav mini-bar in footer */
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-section_social-nav-item {
+.footer-section__social-nav-item { /* icon display / padding for social site / utility icons */
   display: inline-block;
   padding: 1rem 0.7rem;
 }
 
-.footer-section__social-nav-icon {
-
+.footer-section__social-nav-icon { /* social icon styling */
+  font-size: 2em;
 }
 
-.footer-section__copyright-claim-text {
-  color: #818181;
+/* website viewed on tablet or mobile - media query */
+
+@media (max-width: 1028px) {   /* for viewport <= 1028 pix wide */
+
+ #title {  /* center title text for stacked 100%-wide columns */
+   text-align: center;
+ }
+
+ .title-section__column {  /* restore title section column to HTML flow */
+   position: static;
+ }
+
+ .title-section__phone-image {  /* restore phone image to HTML flow, eliminate rotation */
+   position: static;
+   transform: rotate(0deg);
+ }
+
 }
