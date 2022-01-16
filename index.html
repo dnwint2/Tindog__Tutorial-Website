@@ -37,13 +37,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerContent">
           <ul class="navbar-nav ms-auto align-middle">
             <li class="nav-item">
-              <a class="nav-link">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#title">Download</a>
+              <a class="nav-link" href="#cta">Download</a>
             </li>
           </ul>
         </div>
@@ -54,7 +54,7 @@
       <!-- Title -->
 
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 title-section__column">
           <h1 class="title-section__call-to-action">Meet new and interesting dogs nearby.</h1>
           <button class="btn btn-dark btn-lg title-section__download-button" type="button"><span class="fab fa-apple title-section__download-button-icon"></span>Download</button>
           <button class="btn btn-outline-light btn-lg title-section__download-button" type="button"><span class="fab fa-google-play title-section__download-button-icon"></span>Download</button>
@@ -236,9 +236,9 @@
 
   <section id="cta">
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <h3 class ="call-to-action-section__call-to-action">Find the True Love of Your Dog's Life Today.</h3>
+    <button class="btn btn-primary btn-dark btn-lg mx-2 my-5" type="button"><span class="fab fa-apple title-section__download-button-icon"></span>Download</button>
+    <button class="btn btn-primary btn-light btn-lg mx-2 my-5" type="button"><span class="fab fa-google-play title-section__download-button-icon"></span>Download</button>
 
   </section>
 
@@ -247,7 +247,22 @@
 
   <footer id="footer">
 
-    <p>© Copyright TinDog</p>
+    <ul class="footer-section__social-nav">
+      <li class="footer-section_social-nav-item">
+        <link class="fab fa-twitter footer-section__social-nav-icon" href="#title">
+      </li>
+      <li class="footer-section_social-nav-item">
+        <link class="fab fa-facebook footer-section__social-nav-icon" href="#title">
+      </li>
+      <li class="footer-section_social-nav-item">
+        <link class="fab fa-instagram footer-section__social-nav-icon" href="#title">
+      </li>
+      <li class="footer-section_social-nav-item">
+        <link class="fas fa-envelope footer-section__social-nav-icon" href="#title">
+      </li>
+    </ul>
+
+    <p class="footer-section__copyright-claim-text">© Copyright 2022 TinDog</p>
 
   </footer>
 
